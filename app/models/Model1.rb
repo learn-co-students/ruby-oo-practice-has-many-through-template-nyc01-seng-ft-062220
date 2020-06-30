@@ -7,7 +7,6 @@ class Magazine
 @@all << self
 end
 
-
 def self.all
     @@all 
 end    
@@ -16,9 +15,8 @@ def all_persons
     Subscription.all.select {|mag| mag==self}
 end
 
-def olders_customers 
+def older_customers 
 Subscription.all.map
-
 end
 
 end
