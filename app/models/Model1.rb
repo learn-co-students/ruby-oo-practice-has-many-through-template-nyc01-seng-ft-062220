@@ -1,5 +1,24 @@
-#class for Model1 goes here
-#Feel free to change the name of the class
-class Model1
+require 'pry'
+class Magazine
+    attr_reader :name
+    @@all=[]
+    def initialize(name)
+@name=name
+@@all << self
+end
+
+
+def self.all
+    @@all 
+end    
+
+def all_persons
+    Subscription.all.select {|mag| mag==self}
+end
+
+def olders_customers 
+Subscription.all.map
+
+end
 
 end
